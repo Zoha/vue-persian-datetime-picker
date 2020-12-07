@@ -70,6 +70,7 @@
       >
         <div :class="[prefix('container')]">
           <div :class="[prefix('content')]">
+            <slot name="header"></slot>
             <div
               :class="[prefix('header')]"
               :style="{ 'background-color': color }"
@@ -447,6 +448,7 @@
                 </slot>
               </div>
             </div>
+            <slot name="footer"></slot>
           </div>
         </div>
       </div>
